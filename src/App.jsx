@@ -1,11 +1,14 @@
-import React from "react"
+import React from "react";
+import Heading from "./components/Heading/Heading";
+import TripsSection from "./components/TripsSection/TripsSection";
 
 function App() {
   return (
     <div className="main__container">
-      <h1>Hello world</h1>
+      <Heading />
+      <TripsSection />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

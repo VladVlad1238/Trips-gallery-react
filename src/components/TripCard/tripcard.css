@@ -1,0 +1,35 @@
+.card__container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.transport__lable-container {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  padding: 15px 20px;
+  border-radius: 100px;
+  background: #FFF59D;
+}
+.transport__lable-text {
+  color: #181818;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 93.523%; /* 14.964px */
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+}
+
+.description__card-container {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.description__text {
+  color: #FFFEF4;
+  font-size: 45px;
+  font-style: normal;
+  line-height: 93.523%; /* 42.085px */
+  letter-spacing: -1.8px;
+}
