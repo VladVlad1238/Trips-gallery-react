@@ -6,7 +6,7 @@ import istanbulImg from "../../assets/istanbul.jpg";
 import dubaiImg from "../../assets/dubai.png";
 import pchuketImg from "../../assets/pchuket.jpg";
 import TripCard from "../TripCard/TripCard";
-import capacityImg from "../../assets/double.jpg";
+
 
 
 const trips = [
@@ -14,7 +14,7 @@ const trips = [
     id: 1,
     transportLable: 'на автобусе',
     capacityLable: 10,
-    capacityLableImg: capacityImg,
+    capacityLableImg: true,
     image: tbilisiImg,
     city: 'Тбилиси',
     month: 'апрель',
@@ -24,6 +24,7 @@ const trips = [
     id: 2,
     transportLable: 'на самолете',
     capacityLable: null,
+    capacityLableImg: false,
     image: istanbulImg,
     city: 'Стамбул',
     month: 'март',
@@ -33,7 +34,7 @@ const trips = [
     id: 3,
     transportLable: 'на самолете',
     capacityLable: 15,
-    capacityLableImg: capacityImg,
+    capacityLableImg: true,
     image: dubaiImg,
     city: 'Дубаи',
     month: 'июнь',
@@ -43,7 +44,7 @@ const trips = [
     id: 4,
     transportLable: 'самолет + паром',
     capacityLable: 11,
-    capacityLableImg: capacityImg,
+    capacityLableImg: true,
     image: pchuketImg,
     city: 'Пхукет',
     month: 'сентябрь',
@@ -61,18 +62,16 @@ function TripsSection() {
 
     { trips.map(trip => (
       <TripCard 
+          key={trip.id}
           transportLable={trip.transportLable}
           capacityLable={trip.capacityLable}
-          capacityLableImg={trip.capacityImg}
+          capacityLableImg={trip.capacityLableImg}
           image={trip.image}
           city={trip.city}
           month={trip.month}
           price={trip.price}
     />
     )) }
-
-
-    <img src={capacityImg} alt="" />
     </div>
   );
 };

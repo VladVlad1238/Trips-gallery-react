@@ -3,13 +3,22 @@
   margin-bottom: 30px;
 }
 
-.transport__lable-container {
+.lables__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: absolute;
   top: 40px;
   left: 40px;
+}
+
+.transport__lable-container,
+.capacity__lable-container{
+  display: flex;
+  gap: 5px;
   padding: 15px 20px;
   border-radius: 100px;
-  background: #FFF59D;
+  background: white;
 }
 .transport__lable-text {
   color: #181818;
@@ -19,6 +28,10 @@
   line-height: 93.523%; /* 14.964px */
   letter-spacing: -0.64px;
   text-transform: uppercase;
+}
+
+.capacity__img {
+  background: none;
 }
 
 .description__card-container {
